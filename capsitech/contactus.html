@@ -27,11 +27,35 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="ms-auto d-flex flex-column flex-md-row align-items-center gap-3">
           <div class="d-flex flex-column flex-md-row align-items-center gap-3">
-            <a href="#" class="nav-link-custom">Resources</a>
+  
+           
+            <div class="dropdown">
+              <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Help Center</a></li>
+                <li><a class="dropdown-item" href="#">Guides</a></li>
+              </ul>
+            </div>
+  
             <a href="#" class="nav-link-custom">Success stories</a>
-            <a href="#" class="nav-link-custom">Company</a>
+  
+            <div class="dropdown">
+              <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Careers</a></li>
+                <li><a class="dropdown-item" href="./contactus.html">Contact</a></li>
+              </ul>
+            </div>
+  
             <a href="#" class="nav-link-custom">Pricing</a>
           </div>
+  
           <div class="d-flex flex-column flex-md-row align-items-center gap-2">
             <button class="btn-login">Login</button>
             <button class="btn-create-account">Create free account</button>
@@ -92,46 +116,46 @@
     </div>
     <div class="form-container">
       <form>
-        <div class="row g-3">
+        <div class="row g-4 align-items-center">
           <div class="col-md-6">
             <label for="fullName" class="form-label">Full name</label>
-            <input type="text" class="form-control" id="fullName" value="Ram Kumar Sharma">
+            <input type="text" class="form-control input-set" id="fullName" value="Ram Kumar Sharma">
           </div>
           <div class="col-md-6">
             <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email">
+            <input type="email" class="form-control input-set" id="email">
           </div>
           <div class="col-md-6">
             <label for="phone" class="form-label">Phone number</label>
-            <input type="tel" class="form-control" id="phone">
+            <input type="tel" class="form-control input-set" id="phone">
           </div>
           <div class="col-md-6">
             <label for="dob" class="form-label">Date of birth</label>
-            <input type="date" class="form-control" id="dob">
+            <input type="date" class="form-control input-set" id="dob">
           </div>
           <div class="col-md-6">
             <label for="gender" class="form-label">Gender</label>
-            <input type="text" class="form-control" id="gender">
+            <input type="text" class="form-control input-set" id="gender">
           </div>
           <div class="col-md-6">
             <label for="city" class="form-label">City</label>
-            <input type="text" class="form-control" id="city">
+            <input type="text" class="form-control input-set" id="city">
           </div>
           <div class="col-md-6">
             <label for="state" class="form-label">State</label>
-            <input type="text" class="form-control" id="state">
+            <input type="text" class="form-control input-set" id="state">
           </div>
           <div class="col-md-6">
             <label for="country" class="form-label">Country</label>
-            <input type="text" class="form-control" id="country">
+            <input type="text" class="form-control input-set" id="country">
           </div>
           <div class="col-md-6">
             <label for="address" class="form-label">Address</label>
-            <input type="text" class="form-control" id="address">
+            <input type="text" class="form-control input-set" id="address">
           </div>
           <div class="col-md-6">
             <label for="message" class="form-label">Message</label>
-            <input type="text" class="form-control" id="message">
+            <input type="text" class="form-control input-set" id="message">
           </div>
           <div class="col-md-6">
             <label class="form-label d-block">Request a counselling session</label>
@@ -145,8 +169,13 @@
             </div>
           </div>
           <div class="col-md-6">
-            <label for="resume" class="form-label">Upload your CV/Resume</label>
-            <input type="file" class="form-control" id="resume">
+            <div class="upload-container">
+              <label for="cvUpload" class="form-label">Upload your CV/Resume</label>
+              <label for="cvUpload" class="custom-file-upload">
+                <i class="bi bi-cloud-arrow-up"></i> Choose file
+              </label>
+              <input type="file" id="cvUpload" name="cvUpload">
+            </div>
           </div>
           <div class="col-12">
             <div class="form-check">
@@ -156,8 +185,8 @@
               </label>
             </div>
           </div>
-          <div class="col-12 text-center mt-4">
-            <button type="submit" class="btn btn-submit">Submit Information</button>
+          <div class="col-12 mx-2 mt-4">
+            <button type="submit" class="btn btn-submit py-2 px-5 border-0">Submit Information</button>
           </div>
         </div>
       </form>
@@ -168,51 +197,55 @@
       <div class="container-md">
         <img src="./task1/images/c-s2-1.png" class="img-fluid px-md-5 py-md-5">
       </div>
-      <div class="container">
-        <div>
-          <h2 class="text1-sectionc3 text-center">Do you have any quesiton</h2>
-          <h4 class="text2-sectionc3 text-center">Our support team ready to help you, please contact with them</h4>
-        </div>
-
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Accordion Item #1
+      <div class="faq-section">
+        <div class="container text-center">
+          <h2 class="text1-sectionc3">Do you have any question</h2>
+          <p class="text2-sectionc3">Our support team is ready to help you, please contact them</p>
+      
+          <div class="faq-list text-start mx-auto mt-4">
+            <div class="faq-item">
+              <button class="faq-question">
+                <span class="icon"><i class="bi bi-plus-circle-fill"></i></span>
+                How to contact riders in an emergency?
               </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="faq-answer">
+                You can contact riders by going to the help section of the app and tapping "Emergency Support".
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
+      
+            <div class="faq-item">
+              <button class="faq-question">
+                <span class="icon"><i class="bi bi-plus-circle-fill"></i></span>
+                App installation failed, how to update system information?
               </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="faq-answer">
+                Ensure your device software is updated and reinstall the app from the official app store.
               </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
+      
+            <div class="faq-item">
+              <button class="faq-question">
+                <span class="icon"><i class="bi bi-plus-circle-fill"></i></span>
+                Website response taking time, how to improve?
               </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <div class="faq-answer">
+                Make sure your internet connection is stable. You can also try clearing the cache and reloading the page.
+              </div>
+            </div>
+      
+            <div class="faq-item">
+              <button class="faq-question">
+                <span class="icon"><i class="bi bi-plus-circle-fill"></i></span>
+                Has the new update fixed all bugs and issues?
+              </button>
+              <div class="faq-answer">
+                Yes, the latest update resolved known bugs and improved performance. Please update now!
               </div>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   </section>
   <section class="sectionc-4 py-5">
@@ -266,5 +299,25 @@
       </div>
     </div>
   </section>
+  <script>
+    const questions = document.querySelectorAll('.faq-question');
+  
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const icon = q.querySelector('.icon i');
+        item.classList.toggle('active');
+  
+        
+        if (item.classList.contains('active')) {
+          icon.classList.remove('bi-plus-circle-fill');
+          icon.classList.add('bi-dash-circle-fill');
+        } else {
+          icon.classList.remove('bi-dash-circle-fill');
+          icon.classList.add('bi-plus-circle-fill');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
