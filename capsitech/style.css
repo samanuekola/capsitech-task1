@@ -13,33 +13,48 @@
         font-family: Inter;
       }
       .btn-login {
+        padding-top: 14px;
+        padding-right: 21.84px;
+        padding-bottom: 12px;
+        padding-left: 22px;
+        border-width: 2px;
+        border-radius: 12px;
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+
         border: 1px solid black;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-top: 8px;
-        padding-bottom: 8px;
         background-color: white;
-        margin-right: 8px;
-        border-radius: 8px;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 1)
+        box-shadow: 3px 3px 0px 0px rgba(46, 47, 53, 1)
       }
       .btn-create-account {
+        padding-top: 14px;
+        padding-right: 25.86px;
+        padding-bottom: 12px;
+        padding-left: 25px;
+        border-width: 2px;
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+
         background-color: #ff6a00;
         color: white;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        border-radius: 8px;
-        border: none;
-        box-shadow: 2px 2px 0px black;
+        box-shadow: 3px 3px 0px 0px rgba(46, 47, 53, 1);
       }
       .navbar-brand img {
         height: 30px;
       }
       .landing-section{
         background-color: #E0F8F2;
-        padding-top:100px;
+        padding-top:60px;
       }
       .landing-p{
         font-family: Inter;
@@ -71,14 +86,15 @@
         max-width: 100%;
       }
       .btn-tryit{
-        width: 200.046875;
+        width: 261.046875;
         height: 64;
         padding-top: 22px;
         padding-right: 66.05px;
         padding-bottom: 22px;
         padding-left: 65px;
-        border-radius: 15px;
         border-width: 2px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 0px 0px rgba(46, 47, 53, 1);        
         background-color: #ff6a00;
         color: white;
       }
@@ -110,6 +126,8 @@
       .section-2a{
         background-color: #F3FAFA;
         padding-bottom: 100px;
+        padding-right: 208px;
+        padding-left: 208px;
       }
       .text-section2a{
         font-family: Inter;
@@ -121,10 +139,25 @@
         vertical-align: middle;
 
       }
+      @media (max-width:800px) {
+        .section-2a{
+          padding: 10%;
+        }
+        .section-3{
+          padding-left: 5%;
+          padding-right: 5%;
+          padding-top: 5%;
+          padding-bottom: 5%;
+        }
+      }
       .section-3{
         background-color: #FDF3EA;
-        padding: 100px 0;
+        padding-right: 75px;
+        padding-left: 75px;
+        padding-bottom: 100px;
+        padding-top: 100px;
       }
+
       .text-section3{
         font-family: Inter;
         font-weight: 700;
@@ -135,12 +168,14 @@
         padding-top:100px;
       }
       .text-s3{
-        font-family: Roboto;
-        font-weight: 400;
-        font-size:20px;
-        line-height: 22px;
+        font-family: Inter;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 16px;
+        line-height: 30px;
         letter-spacing: 0%;
         vertical-align: middle;
+
       }
       .border-div{
         border: solid;
@@ -151,8 +186,14 @@
       }
       .desig-s3{
         color: #D1C7BE;
-        vertical-align: middle;
         margin: 0;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+
       }
       .text-fav2{
         font-family: Covered By Your Grace;
@@ -188,6 +229,14 @@
       }
       .section-4{
         padding-bottom: 100px;
+        padding-right: 75px;
+        padding-left: 75px;
+      }
+      @media (max-width:800px) {
+        .section-4{
+          padding-left:10% ;
+          padding-right:10%;
+        }
       }      
       .text1-section4{
         font-family: Inter;
@@ -334,7 +383,27 @@
     }
     .section6{
       background-color: #EEECFF;
-      padding: 100px 0;
+      width: 1440;
+      height: 905.984375;
+      top: 8006.92px;
+      left: 2px;
+      padding-top: 96px;
+      padding-right: 75px;
+      padding-bottom: 96px;
+      padding-left: 75px;
+
+    }
+    .btn-login2{
+      width: 232.5625;
+      height: 64;
+      padding-top: 22px;
+      padding-right: 41.56px;
+      padding-bottom: 22px;
+      padding-left: 42px;
+      border-width: 2px;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 3px 3px 0 0 rgba(46, 47, 53, 1);
     }
     .text-section6{
       font-family: Inter;
@@ -376,6 +445,18 @@
     .section7{
       background-color: #FF6D2C;
       color: #FFFFFF;
+      width: 1440;
+      height: 737;
+      top: 9512.91px;
+      left: 2px;
+      padding-right: 75px;
+      padding-left: 75px;
+
+    }
+    @media (max-width:800px) {
+      .section7{
+        padding: 0%;
+      }
     }
     .section7-text1{
       font-family: Inter;
@@ -388,7 +469,18 @@
     }
     .section8{
       background-color: #F3FAFA;
-      padding: 100px 0;
+      width: 1440;
+      height: 737;
+      top: 9512.91px;
+      left: 2px;
+      padding-right: 75px;
+      padding-left: 75px;
+
+    }
+    @media (max-width:800px) {
+      .section8{
+        padding: 5%;
+      }
     }
     .section8-color{
       background-color: #F3FAFA;
@@ -427,6 +519,10 @@
     }
     .section9{
       margin-bottom: 0px;
+    }
+    .a-section a{
+      text-decoration: none;
+      display: block;
     }
     .text1-section9{
       font-family: Inter;
